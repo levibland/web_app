@@ -1,0 +1,202 @@
+@import "_global.css";
+@import "burger.css";
+@import "_responsive.css";
+.Header {
+    position: fixed;
+    width: 100%;
+    padding: 25px 0;
+    z-index: 999;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 1px 0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+}
+
+.ThemeSwitcher__Wrapper {
+    padding: 15px 30px;
+  }
+
+.HeaderLinks {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-items: center;
+}
+
+.Header .HeaderLink {
+    color: white;
+    font-weight: 700;
+}
+
+.Header .HeaderLogo {
+    color: #fff;
+    font-weight: 700;
+}
+
+.Header .HeaderButton {
+    padding: 8px 20px;
+    font-size: 20px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: var(--cubicBezier);
+}
+
+.Header .HeaderButton:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+}
+
+.Header .HeaderButtonBuy {
+    padding: 8px 20px;
+    font-size: 20px;
+    background: #56ccf2;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: var(--cubicBezier);
+}
+
+.Header .HeaderButtonBuy:hover {
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+}
+
+.Header .HeaderButtonBuy {
+    padding: 8px 20px;
+    font-size: 20px;
+    background: #56ccf2;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: var(--cubicBezier);
+}
+
+.Header .HeaderButtonBuy:hover {
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+}
+
+.products-container {
+    max-width: 650px;
+    height: 1000px;
+    justify-content: space-around;
+    margin: 0 auto;
+    transform: translateY(100px);
+}
+
+.products-container ion-icon {
+    font-size: 25px;
+    color: blue;
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.products-container img {
+    height: 50px;
+    width: 50px;
+    overflow: hidden;
+}
+
+.product-header {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    justify-content: flex-start;
+    border-bottom: 4px solid lightgrey;
+    margin: 0 auto;
+}
+
+.product-title {
+    width: 45%;
+}
+
+.price {
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+
+.quantity {
+    width: 30%;
+    display: flex;
+    align-items: center;
+}
+
+.total {
+    width: 10%;
+    display: flex;
+    align-items: center;
+}
+
+.products {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 45%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid lightgrey;
+}
+
+.basketTotalContainer {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.basketTotalTitle {
+    width: 30%;
+}
+
+.basketTotal {
+    width: 10%;
+}
+
+.buybuttoncontainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 500px) {
+    nav h2 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;;
+    }
+
+    .sm-hide {
+        display: none;;
+    }
+
+    .products,
+    .product-header {
+        justify-content: center;
+    }
+
+    .basketTotalContainer {
+        padding-right: 8%;
+    }
+}

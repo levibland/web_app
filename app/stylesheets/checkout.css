@@ -1,0 +1,133 @@
+@import "_global.css";
+@import "burger.css";
+@import "_responsive.css";
+
+.Header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    padding: 1px 0;
+    z-index: 200;
+    transition: var(--cubicBezier);
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(20px);
+  }
+  
+  .HeaderLinks {
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    align-items: center;
+    justify-items: center;
+  }
+  
+  .Header .HeaderLink {
+    color: white;
+    font-weight: 700;
+  }
+  
+  .Header .HeaderLogo {
+    color: #fff;
+    font-weight: 700;
+  }
+  
+  .Header .HeaderButtonBuy {
+    padding: 8px 20px;
+    font-size: 20px;
+    background: #56ccf2;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: var(--cubicBezier);
+  }
+  
+  .Header .HeaderButtonBuy:hover {
+    background: #fff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+  }
+  
+  .Header .HeaderButton {
+    padding: 8px 20px;
+    font-size: 20px;
+    color: #fff;
+    background: transparent;
+    border: none;
+    font-weight: 700;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+    transition: var(--cubicBezier);
+  }
+  
+  .Header .HeaderButton:hover {
+    background: #fff;
+    color: #000;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.25);
+    transform: translateY(-3px);
+  }
+
+.ThemeSwitcher__Wrapper {
+    padding: 15px 30px;
+}
+
+/* Form Styles */
+
+.form {
+    height: 100vh;
+    width: 400px;
+    margin: 50px auto;
+    margin-top: 150px;
+    text-align: center;
+    position: relative;
+}
+
+.form fieldset {
+    background: #fff;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 15px 1px rgba(0,0,0,0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 80%;
+    margin: 0 10%;
+    position: relative;
+}
+
+.form input {
+    padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 10px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: 'Public Sans', sans-serif;
+	color: #2C3E50;
+	font-size: 13px;
+}
+
+.form .lower {
+    margin-bottom: 35px !important;
+}
+
+.form .btn {
+    margin-bottom: 35px !important;
+}
+
+.title {
+    font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+
+.subtitle {
+    font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+

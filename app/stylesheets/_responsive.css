@@ -1,0 +1,81 @@
+/* Cards - Two per row */
+@media (max-width: 1060px) {
+    .CardGroup {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Mobile Nav - only displays when the screen is 720px or less */
+  @media (min-width: 720px) {
+
+    .HamburgerMenuWrapper {
+      display: none;
+    }
+  }
+  
+  /* Basic styles to make sure everything looks right */
+  @media (max-width: 720px) {
+    
+    html {
+        overflow-x: hidden;
+    }
+
+    .Header {
+      display: none;
+    }
+
+    .ThemeSwitcher__Wrapper {
+      display: none !important;
+    }
+
+    .ThemeSwitcher__Wrapper.Scrolled {
+      display: none;
+    }
+
+    .Hero {
+        height: 100vh !important;
+    }
+    
+    .HeroGroup h1 {
+      margin-top: 100px !important;
+    }
+
+    .burger {
+      display: block;
+      margin-right: 225px;
+    }
+    
+    .HeaderLink {
+      display: none;
+    }
+
+    .CardGroup {
+      grid-template-columns: repeat(1, 1fr) !important;
+      margin-bottom: 0 !important;
+      margin-top: 40px !important;
+
+    }
+
+    .FooterGroup {
+      margin-top: 40px;
+    }
+
+    ::-webkit-scrollbar {
+      display: none;
+    }
+  }
+  
+  /* Change font sizes so they look right on screens with horizontal widths of less than pr equal to 640px */
+  @media (max-width: 640px) {
+    .HeroGroup {
+      padding: 100px 20px;
+    }
+  
+    .Hero h1 {
+      font-size: 40px;
+    }
+  
+    .Hero p {
+      font-size: 24px;
+    }
+  }

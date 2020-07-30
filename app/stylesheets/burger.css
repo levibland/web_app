@@ -1,0 +1,290 @@
+/* Mobile Navbar */
+.HamburgerMenuWrapper {
+    position: fixed;
+    width: 100%;        
+    z-index: 100;
+    top: 0px;
+}
+
+.HamburgerMenuContainer {
+    height: 60px;
+    width: 100%;
+    background: rgb(33, 44, 79);
+    position: relative;
+}
+
+/* Nav Logo */
+.HamburgerMenuImage {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Hamburger Menu */
+.HamburgerMenu__Hamburger {
+    cursor: pointer;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    margin-left: 16px;
+    transition: all 0.25s ease 0s;
+}
+
+/* Hamburger Menu - Top Bun */
+.HamburgerMenu__TopBun {
+    top: 29px;
+    margin: 5px;
+    transform: translateY(0px);
+    background: rgb(86, 204, 242);
+    display: block;
+    position: absolute;
+    left: 16px;
+    width: 27px;
+    transform: rotate(0deg);
+    height: 2px;
+    border-radius: 1px;
+    transition: all 0.25s ease 0s;
+}
+
+/* Top Bun - Crossed */
+.HamburgerMenu__TopBun.open {
+    top: 29px;
+    transform: rotate(45deg) translateY(-7px);
+    background: rgb(86, 204, 242);
+}
+
+/* Hamburger Menu - Bottom Bun */
+.HamburgerMenu__BottomBun {
+    margin: 5px;
+    bottom: 29px;
+    transform: translateY(0px);
+    background: rgb(86, 204, 242); 
+    display: block;
+    position: absolute;
+    left: 16px;
+    width: 27px;
+    height: 2px;
+    transform: rotate(0deg);
+    border-radius: 1px;
+    transition: all 0.25s ease 0s;
+}
+
+/* Bottom Bun - Crossed */
+.HamburgerMenu__BottomBun.open {
+    bottom: 29px;
+    transform: rotate(-45deg) translateY(7px);
+    background: rgb(86, 204, 242);
+}
+/* Desktop Theme Switcher */
+.ThemeSwitcher__Wrapper {
+    position: fixed;
+    top: 0px;
+    right: 10px;
+    margin-top: 10px;
+    display: flex;
+    cursor: pointer;
+    user-select: none;
+    z-index: 1000;
+    padding: 40px 30px;
+    transition: padding 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+}
+
+.ThemeSwitcher__Wrapper.Scrolled {
+    padding: 15px 30px;
+}
+
+.ThemeSwitcher__SunIcon.switch1 {
+    position: absolute;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: opacity 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+}
+
+.ThemeSwitcher__SunIcon {
+    position: absolute;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    transform: rotate(360deg);
+    transition: opacity 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+}
+
+.ThemeSwitcher__MoonIcon {
+    position: absolute;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    transform: rotate(360deg);
+    transition: opacity 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+}
+
+.ThemeSwitcher__MoonIcon.switch2 {
+    position: absolute;
+    left: 0px;
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    transform: rotate(0deg) !important;
+    transition: opacity 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+}
+
+/* Mobile Themeswitcher Wrapper */
+.HamburgerMenu__ThemeWrapper {
+    position: absolute;
+    right: 0px;
+    margin-right: 16px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+}
+
+.HamburgerMenu__ThemeWrapper:hover {
+    cursor: pointer;
+}
+
+/* Sun Icon */
+.HamburgerMenu__SunIcon.switch1 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: opacity 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+}
+
+.HamburgerMenu__SunIcon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    transform: rotate(360deg);
+    transition: opacity 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+}
+
+/* Moon Icon */
+.HamburgerMenu__MoonIcon {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 0;
+    transform: rotate(360deg);
+    transition: opacity 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+}
+
+.HamburgerMenu__MoonIcon.switch2 {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    opacity: 1;
+    transform: rotate(0deg);
+    transition: opacity 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s, transform 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+}
+
+/* Colour Transitions */
+
+/* Universal Dark */
+html.dark {
+    background: rgb(33, 44, 79);
+    -webkit-transition: color .8s cubic-bezier(.2,.8,.2,1),background-color .8s cubic-bezier(.2,.8,.2,1),fill .8s cubic-bezier(.2,.8,.2,1);
+    transition: color .8s cubic-bezier(.2,.8,.2,1),background-color .8s cubic-bezier(.2,.8,.2,1),fill .8s cubic-bezier(.2,.8,.2,1);
+}
+
+/* Universal Light */
+html {
+    background: #fff;
+    -webkit-transition: color .8s cubic-bezier(.2,.8,.2,1),background-color .8s cubic-bezier(.2,.8,.2,1),fill .8s cubic-bezier(.2,.8,.2,1);
+    transition: color .8s cubic-bezier(.2,.8,.2,1),background-color .8s cubic-bezier(.2,.8,.2,1),fill .8s cubic-bezier(.2,.8,.2,1);
+}
+
+/* Card Title Dark */
+.CardTitle.light {
+    background: rgb(226, 226, 226);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Footer Dark */
+.FooterGroup.dark {
+    background: rgb(26, 34, 61);
+    -webkit-transition: color .8s cubic-bezier(.2,.8,.2,1),background-color .8s cubic-bezier(.2,.8,.2,1),fill .8s cubic-bezier(.2,.8,.2,1);
+    transition: color .8s cubic-bezier(.2,.8,.2,1),background-color .8s cubic-bezier(.2,.8,.2,1),fill .8s cubic-bezier(.2,.8,.2,1);
+}
+
+.FooterGroup.dark .LinkGroup {
+    color: rgb(156, 114, 248);
+}
+
+.FooterGroup.dark .LinkGroup a:hover {
+    color: #56ccf2;
+}
+
+.FooterGroup.dark .FooterText {
+    color: rgb(226,226,226);
+    -webkit-transition: color .8s cubic-bezier(.2,.8,.2,1),background-color .8s cubic-bezier(.2,.8,.2,1),fill .8s cubic-bezier(.2,.8,.2,1);
+    transition: color .8s cubic-bezier(.2,.8,.2,1),background-color .8s cubic-bezier(.2,.8,.2,1),fill .8s cubic-bezier(.2,.8,.2,1);
+}
+
+.FooterGroup {
+    -webkit-transition: color .8s cubic-bezier(.2,.8,.2,1),background-color .8s cubic-bezier(.2,.8,.2,1),fill .8s cubic-bezier(.2,.8,.2,1);
+    transition: color .8s cubic-bezier(.2,.8,.2,1),background-color .8s cubic-bezier(.2,.8,.2,1),fill .8s cubic-bezier(.2,.8,.2,1);
+}
+
+.FooterGroup .FooterText {
+    -webkit-transition: color .8s cubic-bezier(.2,.8,.2,1),background-color .8s cubic-bezier(.2,.8,.2,1),fill .8s cubic-bezier(.2,.8,.2,1);
+    transition: color .8s cubic-bezier(.2,.8,.2,1),background-color .8s cubic-bezier(.2,.8,.2,1),fill .8s cubic-bezier(.2,.8,.2,1);
+}
+
+/* Dropdown Nav - Closed */
+.HamburgerMenu__Dropdown {
+    width: 100vw;
+    height: 0px;
+    position: absolute;
+    top: 60px;
+    background: rgb(33, 44, 79);
+    overflow: scroll;
+    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+}
+
+/* Dropdown Nav - Open */
+.HamburgerMenu__Dropdown.open {
+    width: 100vw;
+    position: absolute;
+    top: 60px;
+    height: 100vh;
+    background: rgb(33, 44, 79);
+    overflow: scroll;
+    transition: all 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) 0s;
+}
+
+/* Link Box */
+.HamburgerMenu__Box {
+    width: 100%;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    padding-left: 30px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Link */
+.HamburgerMenu__Box a {
+    color: #fff;
+}

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" class="animated fadeIn">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Order - HHS Cafe</title>
+      <link rel="icon" href="../assets/images/favicon.png" type="image/x-icon"/>
+      <link rel="shortcut icon" href="../assets/images/favicon.png" type="image/x-icon"/>
+      <link rel="stylesheet" href="../app/stylesheets/order.css">
+      <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.compat.min.css">
+   </head>
+   <body>
+      <nav class="Header">
+         <div class="HeaderGroup">
+            <div class="HeaderLinks">
+               <a href="../" class="HeaderLogo"><img src="../assets/images/logo.png" width="125px" alt="Logo"/></a>
+               <a href="../" class="HeaderLink"><button class="HeaderButton">Home</button></a>
+               <a href="../#about" class="HeaderLink"><button class="HeaderButton">About</button></a>
+               <a href="#catalog" class="HeaderLink"><button class="HeaderButton">Catalog</button></a>
+               <a href="../cart/" class="HeaderLink"><button class="HeaderButtonBuy">Cart <span></span></button></a>
+                <div class="burger">
+                    <div></div>
+                </div>
+            </div>
+         </div>
+      </nav>
+      <div class="ThemeSwitcher__Wrapper">
+        <img src="../assets/images/sun.svg" alt="Sun Icon, white" class="ThemeSwitcher__SunIcon">
+        <img src="../assets/images/moon.svg" alt="Moon Icon, white" class="ThemeSwitcher__MoonIcon switch2">
+    </div>
+    <div class="HamburgerMenuWrapper">
+        <div class="HamburgerMenuContainer">
+            <a href="/" class="HeaderLogo">
+                <div class="HamburgerMenuImage"><img src="../assets/images/logo.png" width="100px" alt="Logo"/></a></div>
+            </a>
+            <div class="HamburgerMenu__Hamburger">
+                <span class="HamburgerMenu__TopBun"></span>
+                <span class="HamburgerMenu__BottomBun"></span>
+            </div>
+            <div class="HamburgerMenu__ThemeWrapper">
+                <img src="../assets/images/sun1.svg" alt="Sun, blue" class="HamburgerMenu__SunIcon switch1"/>
+                <img src="../assets/images/moon.1.svg" alt="Moon, blue" class="HamburgerMenu__MoonIcon"/>
+            </div>
+        </div>
+        <div class="HamburgerMenu__Dropdown">
+            <div class="HamburgerMenu__Box">
+                <a href="../">Home</a>
+            </div>
+            <div class="HamburgerMenu__Box">
+                <a href="#catalog">Menu</a>
+            </div>
+            <div class="HamburgerMenu__Box">
+                <a href="../cart">Cart</a>
+            </div>
+        </div>
+    </div>
+      <div class="Hero">
+        <div class="HeroGroup">
+            <h1>Welcome to<br/>Our Menu.</h1>
+            <p>Please scroll down.</p>
+        </div>
+    </div>
+    <span id="catalog"></span>
+    <span></span>
+    <div class="Cards">
+        <h2 class="CardTitle">Menu</h2>
+            <div class="CardGroup" id="row-1">
+                <a href="#row-1" class="add-to-cart product-1">
+                    <div class="Card">
+                        <img src="../assets/images/shortblack.jpg" alt="Short Black"/>
+                        <h3>Short Black</h3>
+                        <p>$2.00</p>
+                    </div>
+                </a>
+                <a href="#row-1" class="add-to-cart product-2">
+                    <div class="Card">
+                        <img src="../assets/images/macchiato.jpeg" alt="Macchiato"/>
+                        <h3>Macciato</h3>
+                        <p>$2.00</p>
+                    </div>
+                </a>
+                <a href="#row-1" class="add-to-cart product-3">
+                    <div class="Card">
+                        <img src="../assets/images/ristretto.jpg" alt="Ristretto"/>
+                        <h3>Ristretto</h3>
+                        <p>$2.00</p>
+                    </div>
+                </a>
+            </div>
+            <div class="CardGroup" id="row-2">
+                <a href="#row-2" class="add-to-cart product-4">
+                    <div class="Card">
+                        <img src="../assets/images/longblack.jpg" alt="Long Black"/>
+                        <h3>Long Black</h3>
+                        <p>$2.00</p>
+                    </div>
+                </a>
+                <a href="#row-2" class="add-to-cart product-5">
+                    <div class="Card">
+                        <img src="../assets/images/americano.jpg" alt="Americano"/>
+                        <h3>Americano</h3>
+                        <p>$2.00</p>
+                    </div>
+                </a>
+                <a href="#row-2" class="add-to-cart product-6">
+                    <div class="Card">
+                        <img src="../assets/images/flatwhite.jpeg" alt="Flat White"/>
+                        <h3>Flat White</h3>
+                        <p>$2.00</p>
+                    </div>
+                </a>
+            </div>
+            <div class="CardGroup" id="row-3">
+                <a href="#row-3" class="add-to-cart product-7">
+                    <div class="Card">
+                        <img src="../assets/images/cappuccino.jpg" alt="Cappuccino"/>
+                        <h3>Cappuccino</h3>
+                        <p>$2.00</p>
+                    </div>
+                </a>
+                <a href="#row-3" class="add-to-cart product-8">
+                    <div class="Card">
+                        <img src="../assets/images/latte.jpg" alt="Latte"/>
+                        <h3>Latte</h3>
+                        <p>$2.00</p>
+                    </div>
+                </a>
+                <a href="#row-3" class="add-to-cart product-9">
+                    <div class="Card">
+                        <img src="../assets/images/mochaccino.jpg" alt="Mochaccino"/>
+                        <h3>Mochaccino</h3>
+                        <p>$2.00</p>
+                    </div>
+                </a>
+            </div>
+            <div class="CardGroup" id="row-4">
+                <a href="#row-4" class="add-to-cart product-10">
+                    <div class="Card">
+                        <img src="../assets/images/mochalatte.jpg" alt="Mocha Latte"/>
+                        <h3>Mocha Latte</h3>
+                        <p>$2.00</p>
+                    </div>
+                </a>
+                <a href="#row-4" class="add-to-cart product-11">
+                    <div class="Card">
+                        <img src="../assets/images/hotchocolate.jpg" alt="Hot Chocolate"/>
+                        <h3>Hot Chocolate</h3>
+                        <p>$2.00</p>
+                    </div>
+                </a>
+                <a href="#row-4" class="add-to-cart product-12">
+                    <div class="Card">
+                        <img src="../assets/images/chailatte.jpeg" alt="Chai Latte"/>
+                        <h3>Chai Latte</h3>
+                        <p>$2.00</p>
+                    </div>
+                </a>
+            </div>
+            <div class="CardGroup" id="row-5">
+                <a href="#row-5" class="add-to-cart product-13">
+                    <div class="Card">
+                        <img src="../assets/images/icedcoffee.jpg" alt="Iced Coffee"/>
+                        <h3>Iced Coffee</h3>
+                        <p>$3.00</p>
+                    </div>
+                </a>
+                <a href="#row-5" class="add-to-cart product-14">
+                    <div class="Card">
+                        <img src="../assets/images/icedchocolate.jpg" alt="Iced Chocolate"/>
+                        <h3>Iced Chocolate</h3>
+                        <p>$3.00</p>
+                    </div>
+                </a>
+                <a href="#row-5" class="add-to-cart product-15">
+                    <div class="Card">
+                        <img src="../assets/images/icedchai.jpg" alt="Iced Chai"/>
+                        <h3>Iced Chai</h3>
+                        <p>$3.00</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <div class="FooterGroup" id="footer">
+			<p class="FooterText">Back To Top</p>
+			<a href="#" class="FooterButton">Back</a>
+			<div class="LinkGroup">
+				<a href="../">Home</a>
+				<a href="../#about">About</a>
+				<a href="../cart">Cart</a>
+				<a href="../checkout">Checkout</a>
+				<a href="https://www.flickr.com/photos/fade_to_gray/30890413691">Card BG</a>
+				<a href="https://www.freepik.com/free-photos-vectors/background">Hero BG</a>
+			</div>
+			<div class="CopyRight">
+				Copyright Levi Bland © 2020
+			</div>
+		</div>
+        <script src="../app/scripts/cart.js"></script>
+        <script src="../app/scripts/burger.js"></script>
+        <script src="https://unpkg.com/ionicons@5.1.1/dist/ionicons.js"></script>
+   </body>
+</html>
